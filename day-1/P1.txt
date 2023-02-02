@@ -9,6 +9,28 @@ Problem 2: For each of the time complexities shown below:
 - Provide a code example of how the complexity works
 
     O(1)
-    - the constant runtime
-    - the best case scenario
+    - the constant time
+    - 1
+    - The constant time algorithm takes the same amount of time to be executed. When counting operations in the code, it will be ignored if/when a worse time complexity of case is invovled. 
+    - function addition(){
+        const total = a + b
+    }
+
+    O(n)
+    - the linear time
+    - 3
+    - the linear time algorithm means the runtime depends on the size of input. when size of input grows, the time to complete increases. 
+    - function removeFirst(){
+        const array1 = [1, 2, 4, 5, 3]
+        array1.shift()
+    }
+
+    O(n^2)
+    - quadratic time
+    - 5
+    - the quadratic time 
+
+    O(log n)
+    - the logarithmic time
+    - 1
     - 
