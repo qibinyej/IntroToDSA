@@ -1,0 +1,7 @@
+Problem 1: In 3-4 sentences, please explain what Big O Notation is.
+
+The Big O Notation is a way to measure a program/code's complexity of runtime and space. It helps with code design and how to make it better. 
+
+scalability 
+time
+demostrate code competency in interviews
