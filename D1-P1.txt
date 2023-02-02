@@ -1,4 +1,0 @@
-Problem 1: In 3-4 sentences, please explain what Big O Notation is.
-
-The Big O Notation is a tool to measure complexities of runtime and space of algorithm. It is used to improve code design with effectiveness and efficiency. It is also used to demostrate code competency in interviews.
-
