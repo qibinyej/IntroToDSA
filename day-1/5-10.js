@@ -54,7 +54,7 @@ const someFunction1 = (arr1) => {
 
 /**
  * Problem 7: Please explain in 3-5 sentences why we can ignore constants and consolidate our time complexities.
- *      When it comes with scaling and data growth, constants is negligible and the actual data growth impact comes from the actual Big O. 
+ *      When it comes with scaling and data growth, constants is negligible and the actual data growth impact comes from  the actual Big O. 
  * 
         When having multiple time complexities in a computation, the worse time complexity has a bigger impact on the code performance. 
  *  
@@ -79,6 +79,7 @@ const someFunction1 = (arr1) => {
 
 /**
  * Problem 10: Give two reasons when you should use a array and when you should use a object.
-    An array provides fast access to its elements and needs order in computation while a object doesn't.
+    When a computation needs order and fast access to elements, An array can do so. 
+    A object can be used when it doesn't need order or fast access to elements. 
  */
 
