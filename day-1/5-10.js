@@ -66,3 +66,13 @@ const someFunction1 = (arr1) => {
  * 
  */
 
+/**
+ * Problem 9: Given the following data TYPES, label what the space complexity is for each one:
+    - Boolean: constant space
+    - Undefined: constant space
+    - Null: constant space
+    - Numbers: constant space
+    - String: linear space
+    - Array: linear space
+    - Object: linear space
+ */
