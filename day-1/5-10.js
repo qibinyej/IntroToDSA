@@ -76,3 +76,9 @@ const someFunction1 = (arr1) => {
     - Array: linear space
     - Object: linear space
  */
+
+/**
+ * Problem 10: Give two reasons when you should use a array and when you should use a object.
+    An array provides fast access to its elements and needs order in computation while a object doesn't.
+ */
+
