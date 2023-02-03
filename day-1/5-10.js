@@ -24,9 +24,9 @@ const someFunction = (arr1) => {
     }
   }
 };
-
 //total time complexity is O(1) + O(n) + O(n) +O(n^2)
 //Consolidated time complexity is O(n^2)
+
 
 /**
  * Problem 6: Given the following piece of code:
@@ -49,6 +49,20 @@ const someFunction1 = (arr1) => {
     }
   }
 };
-
 //Total time complexity is O(1) + O(n) +O(n^3)
 //Consolidated time complexity is O(n^3)
+
+/**
+ * Problem 7: Please explain in 3-5 sentences why we can ignore constants and consolidate our time complexities.
+ *      When it comes with scaling and data growth, constants is negligible and the actual data growth impact comes from the actual Big O. 
+ * 
+        When having multiple time complexities in a computation, the worse time complexity has a bigger impact on the code performance. 
+ *  
+ */
+
+/**
+ * Problem 8: In 2-3 sentences, please explain what space complexity is and why we care.
+ *      Space complexity is the total amount of memory space used for algoirthm/program, including space for input values. When computing algorithm, we should consider how much additional memory it will needs.
+ * 
+ */
+
