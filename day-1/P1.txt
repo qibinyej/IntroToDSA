@@ -34,3 +34,16 @@ Problem 2: For each of the time complexities shown below:
     - the logarithmic time
     - 1
     - 
+
+    O(n!)
+    - factorial
+    - 
+
+Problem 3: Name 3 reasons why we care about Big O and we care about code performance.
+    - scalability
+    - time/efficiency
+    - measurement of competency in interviews
+
+
+
+
