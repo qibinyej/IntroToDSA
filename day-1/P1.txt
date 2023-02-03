@@ -44,6 +44,8 @@ Problem 3: Name 3 reasons why we care about Big O and we care about code perform
     - time/efficiency
     - measurement of competency in interviews
 
-
-
+Problem 4: What is the problem of using a time method such as performance.now() to measure how “fast” a code runs on our machines.
+    The performance.now()method may change every time when we run the code again. The time taken to run a certain function or to perform a certain task depends on how powerful the CPU is. Thus, it's not reliable in this case.
+    
+     
 
