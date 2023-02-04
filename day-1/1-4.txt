@@ -22,27 +22,56 @@ Problem 2: For each of the time complexities shown below:
     - the linear time algorithm means the runtime depends on the size of input. when size of input grows, the time to complete increases. 
     - function removeFirst(){
         const array1 = [1, 2, 4, 5, 3]
-        array1.shift()
+        for(let i =0; i<array1.length; i++){
+            array1[i] +=1
+        }
     }
 
     O(n^2)
     - quadratic time
-    - 5
-    - the quadratic time 
+    - 4
+    - The quadratic time means running a linear function a linear times
+    - function doubleLoops(array1, array2){
+        array1.forEach(element){
+            array2.forEach(element2){
+                if(element == element2){
+                    console.log(element, element2)
+                }
+            }
+        }
+    }
 
     O(log n)
     - the logarithmic time
-    - 1
-    - 
+    - 2
+    - It divides the size of input by 2 each time until only one element left
+    - function recursiveDividedBy2(number){
+        if(Math.abs(number) == 1){
+            return
+        }else{
+            recursiveDividedBy2(Math.abs(number/2))
+        }
+    }
 
     O(n!)
     - factorial
-    - 
+    - 5
+    - doing n for loops n times, but each time nested loop goes 1 less loop than the previous loop. 
+    - function factorialPrint(n){
+        for(i=0; i<n; i++){
+            factorialPrint(n-1)
+        }
+    }
+    for(int i = 0; i < 5; i++) //5
+        for(int i = 0; i < 4; i++) //4
+            for(int i = 0; i < 3; i++) //3
+                for(int i = 0; i < 2; i++) //2
+                    for(int i = 0; i < 1; i++) //1
 
 Problem 3: Name 3 reasons why we care about Big O and we care about code performance.
     - scalability
     - time/efficiency
-    - measurement of competency in interviews
+    - allows to compare various algorithms/computation
 
 Problem 4: What is the problem of using a time method such as performance.now() to measure how “fast” a code runs on our machines.
     The performance.now()method may change every time when we run the code again. The time taken to run a certain function or to perform a certain task depends on how powerful the CPU is. Thus, it's not reliable in this case.
