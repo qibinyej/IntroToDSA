@@ -4,14 +4,22 @@ and checks whether there are any duplicates among the argument passed in.
 You can solve this using the frequency counter pattern OR the multiple pointers pattern.
 */
 
-//frequency counter
+//multiple pointers
 
 const areThereDuplicates = (arrOfLetters) => {
-    for(let i = 0; i<arrOfLetters.length; i++){
-        arrOfLetters[i]
+  let sortedArr = arrOfLetters.sort();
+  for (let i = 0; i < sortedArr.length; i++) {
+    if (i == 0) {
+      continue;
     }
-}
-
+    let prevLetter = sortedArr[i - 1];
+    let currentLetter = sortedArr[i];
+    if (prevLetter == currentLetter) {
+      return true;
+    }
+  }
+  return false;
+};
 
 //Tests
 // areThereDuplicates(['a', 'a', 'c', 'd']) true
