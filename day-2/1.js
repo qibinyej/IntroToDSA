@@ -5,23 +5,21 @@ There can be negative numbers in the array, but it will always be sorted.
 
 //multiple pointers
 const countUniqueValues = (arr) => {
-    let count = 0;
-    let previousValue;
-    let currentValue
-    
-    for(let i = 0; i< arr.length-1; i++){
-        if(!arr[i]){
-            return 0
-        }
+  let count = 0;
 
-        let previousValue = arr[0];
-        let currentValue = arr[i];
-        previousValue = currentValue;
-       if(previousValue !== currentValue ){
-        count++
-       }
+  for (let i = 0; i < arr.length; i++) {
+    if (i == 0) {
+      count++;
+      continue;
     }
-    count++
+    let previousValue = arr[i - 1];
+    let currentValue = arr[i];
+    if (previousValue == currentValue) {
+    } else {
+      count++;
+    }
+  }
+  return count;
 };
 
 countUniqueValues([1, 1, 1, 1, 1, 2]); // 2
