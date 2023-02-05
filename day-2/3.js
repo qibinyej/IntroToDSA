@@ -6,6 +6,18 @@ where the average of the pair equals the target average.
 There may be more than one pair that matches the average target.
 */
 const avgPair = (arr, avgTarget) => {
+    let avgTwoIntegers;
+    for(let i = 0; i < arr.length; i++){
+        for(let j = i + 1; j < arr.length; j++){
+            avgTwoIntegers = (arr[i]+arr[j])/2
+            console.log(avgTwoIntegers)
+            if(avgTwoIntegers){
+                return true
+            }
+        }
+
+    }
+    return false
 }
 // Test Cases:
 // avgPair([1,2,3],2.5) true
