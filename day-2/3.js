@@ -20,7 +20,7 @@ const avgPair = (arr, avgTarget) => {
 };
 
 const avgPair1 = (arr, avgTarget) => {
-  let left = i;
+  let left = 0;
   let right = arr.length - 1;
   while (left < right) {
     let avgTwoIntegers = (arr[left] + arr[right]) / 2;

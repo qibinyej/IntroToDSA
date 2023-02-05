@@ -14,7 +14,6 @@ const countUniqueValues = (arr) => {
     let previousValue = arr[i - 1];
     let currentValue = arr[i];
     if (previousValue == currentValue) {
-        
     } else {
       count++;
     }
