@@ -34,6 +34,7 @@ const avgPair1 = (arr, avgTarget) => {
   }
   return false;
 };
+
 // Test Cases:
 // avgPair([1,2,3],2.5) true
 // avgPair([1,3,3,5,6,7,10,12,19],8) true
