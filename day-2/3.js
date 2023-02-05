@@ -11,7 +11,7 @@ const avgPair = (arr, avgTarget) => {
         for(let j = i + 1; j < arr.length; j++){
             avgTwoIntegers = (arr[i]+arr[j])/2
             console.log(avgTwoIntegers)
-            if(avgTwoIntegers){
+            if(avgTwoIntegers == avgTarget){
                 return true
             }
         }
@@ -24,3 +24,4 @@ const avgPair = (arr, avgTarget) => {
 // avgPair([1,3,3,5,6,7,10,12,19],8) true
 // avgPair([-1,0,3,4,5,6], 4.1) false
 // avgPair([],4) false
+
