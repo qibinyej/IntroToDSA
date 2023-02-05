@@ -3,22 +3,23 @@ Implement a function called countUniqueValues, which accepts a sorted array, and
 There can be negative numbers in the array, but it will always be sorted.
 */
 
-//multipointers
-
+//multiple pointers
 const countUniqueValues = (arr) => {
     let count = 0;
+    let previousValue;
+    let currentValue
     
     for(let i = 0; i< arr.length-1; i++){
-        let left = i
-        let right = arr.length-1
         if(!arr[i]){
             return 0
         }
 
-       while(arr[left] !== arr[right]){
-            left++
-        }
-   
+        let previousValue = arr[0];
+        let currentValue = arr[i];
+        previousValue = currentValue;
+       if(previousValue !== currentValue ){
+        count++
+       }
     }
     count++
 };
