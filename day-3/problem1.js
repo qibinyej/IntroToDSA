@@ -11,8 +11,8 @@ In the first example below, [100, 200, 300] is a subarray of the original array,
 not.
 */
 const maxSubarraySum = (arr, n) => {
-    //edge cases: array is empty or length is less than n
-    if(arr.length > n){
+    //edge cases: length is less than n && arr is empty
+    if(arr.length < n){
         return null;
     }
     let maxSum = 0;
