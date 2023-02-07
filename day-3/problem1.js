@@ -1,6 +1,6 @@
 /**
- * Directions: Please identify and solve the following patterns that appropriately matches a multiple pointers or
-frequency counter pattern using time complexity of O(n). 
+ *  Please identify and solve the following patterns that appropriately matches a divide and conquer or
+sliding window pattern using time complexity of O(n) or O(log(n)).  
  * */
 
 /*
