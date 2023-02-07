@@ -2,6 +2,7 @@
  * Directions: Please identify and solve the following patterns that appropriately matches a multiple pointers or
 frequency counter pattern using time complexity of O(n). 
  * */
+
 /*
 Given an array of integers and a number, write a function called maxSubarraySum,
 which finds the maximum sum of a subarray with the length of the number passed to the function.
@@ -10,6 +11,23 @@ In the first example below, [100, 200, 300] is a subarray of the original array,
 not.
 */
 const maxSubarraySum = (arr, n) => {
+    //edge cases: array is empty or length is less than n
+    if(arr.length > n){
+        return null;
+    }
+    let maxSum = 0;
+    let tempSum = 0;
+    //set up initial window using for loop
+    for(let i = 0; i< n; i++){
+        maxSum += arr[i] //0 +100 + 200 =300
+    }
+    tempSum = maxSum;
+    //sliding window
+    for(let i=n; i<arr.length; i++){
+        tempSum = tempSum - arr[i-n] + arr[i] // 300 - 100 + 300; 500 - arr[3-2]//200 + arr[3]400 =700
+        maxSum = Math.max(maxSum, tempSum)
+    }
+    return -1;
 }
 // Test Cases:
 // maxSubarraySum([100,200,300,400], 2) 700
