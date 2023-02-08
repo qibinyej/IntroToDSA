@@ -13,7 +13,7 @@ function binarySearchFirstOccurrence(nums, target) {
         let middleIndex = Math.floor((left+right)/2)
         let middleValue = nums[middleIndex]
         if(middleValue == target){
-            return middleValue
+            return middleIndex
         }else if(middleValue < target){
             left = middleIndex +1
         }else{
@@ -24,7 +24,7 @@ function binarySearchFirstOccurrence(nums, target) {
     return -1
 
 }
-
+// let nums1 = [2, 2, 2, 2, 2];
 // Test cases
 // let nums1 = [1, 2, 3, 4, 5];
 // let target1 = 3;
