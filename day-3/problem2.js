@@ -15,6 +15,8 @@ function binarySearchFirstOccurrence(nums, target) {
         if(middleValue == target){
             if(middleValue == nums[middleIndex-1]){
                 return middleIndex-1
+            }else{
+                return middleIndex
             }
         }else if(middleValue < target){
             left = middleIndex +1
