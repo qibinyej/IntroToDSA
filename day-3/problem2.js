@@ -1,21 +1,19 @@
 // Given a sorted array of integers, find the first occurrence of a target value.
 // If the target is not found in the array, return -1.
 function binarySearchFirstOccurrence(nums, target) {
-    
     if(nums.length <=0){
         return null
     }
-   
     let left = 0; 
     let right = nums.length-1;
-   
     while(left<right){
         let middleIndex = Math.floor((left+right)/2)
         let middleValue = nums[middleIndex]
-        if(middleValue == target){
+        if(middleValue === target){
             for(let i = middleIndex-1; i>=0; i--){
-                if(nums[i] = target)
-                i--
+                if(nums[i] == target){
+                    middleIndex--
+                }
             }
             return middleIndex
         }else if(middleValue < target){
