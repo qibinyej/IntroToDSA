@@ -6,4 +6,5 @@
 // flatTheArray([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]]) // [1,2,3]
 
 const flatTheArray = (arr) => {
+    
 }
