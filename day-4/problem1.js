@@ -6,5 +6,15 @@
 // flatTheArray([[[[1], [[[2]]], [[[[[[[3]]]]]]]]]]) // [1,2,3]
 
 const flatTheArray = (arr) => {
-    
-}
+  // recursive
+  // return a new array
+
+  //recursion step 1: edge case
+  if (arr.length == 0) {
+    return -1;
+  }
+
+  //step 2: base case
+  let newArr = [];
+  
+};
