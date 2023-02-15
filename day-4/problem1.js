@@ -17,7 +17,6 @@ const flatTheArray = (arr) => {
     if(Array.isArray(arr[i])){
         arr = arr.flat()
         i-- 
-        arr;
     }
   }
   return arr;
