@@ -90,6 +90,11 @@ class SinglyLinkedList {
     this.length++;
     return this; //return new list;
   }
+ 
+  get(index){ //retriving a certain node;
+    
+  }
+
 }
 
 // test cases:
