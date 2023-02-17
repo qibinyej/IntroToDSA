@@ -92,7 +92,19 @@ class SinglyLinkedList {
   }
  
   get(index){ //retriving a certain node;
+    if(index < 0 || index >= this.length) return;
+    if(index === 0){
+      return this.head;
+    }
+    if(index === this.length-1){
+      return this.tail
+    }
     
+    let current = this.head;
+    while(index != current){
+      current = current.next
+    }
+    return current;
   }
 
 }
